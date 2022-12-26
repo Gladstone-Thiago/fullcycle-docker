@@ -48,3 +48,7 @@
 
 ## Delete all containers
 -- docker rm $(docker ps -a -q) -f
+
+## ENTRYPOINT vs CMD
+1.0 Replace CMD
+-- docker run -rm  gladstone-thiago/hello echo "oi"
