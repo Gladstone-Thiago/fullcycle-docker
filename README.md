@@ -41,3 +41,7 @@
 
 ## Understanding images and DockerHub
 -- docker rmi nginx:latest = remove image
+
+## Create my first image docker
+-- docker build -t gladstone-thiago/nginx-with-vim:latest .
+-- docker run -it gladstone-thiago/nginx-with-vim bash
