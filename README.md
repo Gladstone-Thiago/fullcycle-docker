@@ -52,3 +52,20 @@
 ## ENTRYPOINT vs CMD
 1.0 Replace CMD
 -- docker run -rm  gladstone-thiago/hello echo "oi"
+
+## Docker hub
+    ## Docker logout in docker hub
+    -- docker logout
+
+    ## Docker login in docker hub
+    -- docker login
+
+    ## Docker push 
+    -- docker push gladstonethiago/nginx-fullcycle
+
+ ## Docker Network
+ --bridge
+ --host (merge machine network and container network)
+ --overlay (many docker container comunications)
+ --maclan
+ --none
