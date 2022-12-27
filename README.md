@@ -69,3 +69,20 @@
  --overlay (many docker container comunications)
  --maclan
  --none
+    ## commands 
+    1 docker network COMMAND
+ --docker run -d -it --name ubuntu1 bash
+ --docker run -d -it --name ubuntu2 bash
+ --docker attach ubuntu1
+ --ip addr show
+ --ping 172.17.0.3
+## Create new network bridge
+    --docker network create --driver bridge myNetwork
+    ## Docker run with network
+    --docker run -dit --name ubuntu1 --network myNetwork bash
+    ## Docker connect container in network
+    --docker network connect myNetwork ubuntu3
+## Create new network host
+    --docker run --rm -d --name nginx --network host nginx
+    --curl http://localhost
+
