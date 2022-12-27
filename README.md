@@ -85,3 +85,7 @@
 ## Create new network host
     --docker run --rm -d --name nginx --network host nginx
     --curl http://localhost
+
+## Installing framework in a container (php)
+    --docker run -it --name php php:7.4-cli bash
+        --apt-get update
