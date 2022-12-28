@@ -96,3 +96,9 @@
 
 ## Optimization using Multistage Building
     --docker build -t gladstonethiago/laravel:prod laravel -f laravel/Dockerfile.prod
+
+## Nginx proxy reverse 
+    --docker build -t gladstonethiago/nginx:prod . -f Dockerfile.prod
+    --docker network create laranet
+    --docker run -d --network laranet --name laravel gladstonethiago/laravel:prod
+    --docker run -d --network laranet --name nginx -p 8080:80 gladstonethiago/nginx:prod
