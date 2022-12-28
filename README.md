@@ -93,3 +93,6 @@
 ## Node 
     --docker run --rm -it -v $(pwd)/:/usr/src/app -p 3000:3000 node:15 bash
     --docker build -t gladstonethiago/hello-express . -f Dockerfile.prod
+
+## Optimization using Multistage Building
+    --docker build -t gladstonethiago/laravel:prod laravel -f laravel/Dockerfile.prod
