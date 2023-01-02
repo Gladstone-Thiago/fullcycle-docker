@@ -102,3 +102,10 @@
     --docker network create laranet
     --docker run -d --network laranet --name laravel gladstonethiago/laravel:prod
     --docker run -d --network laranet --name nginx -p 8080:80 gladstonethiago/nginx:prod
+
+## Docker compose
+    --docker-compose up
+    --docker-compose up -d
+    --docker-compose ps
+    --docker-compose down
+    --docker-compose up -d --build
